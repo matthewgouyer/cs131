@@ -1,0 +1,69 @@
+    1  passwd
+    2  wget www.github.com
+    3  open index.html
+    4  help
+    5  systemctl enable --now cockpit.socket
+    6  N
+    7  systemctl enable --now cockpick.socket
+    8  systemctl enable --now cockpit.socket
+    9  disconnect
+   10  echo $SHELL
+   11  echo "Hello"
+   12  mkdir files
+   13  pwd
+   14  pwd files
+   15  ls 
+   16  cd files
+   17  pwd
+   18  clean
+   19  clear
+   20  pwd
+   21  touch new.txt
+   22  ls
+   23  vi new.txt
+   24  ls
+   25  history
+   26  exit
+   27  pwd
+   28  pwd
+   29  wget www.github.com
+   30  history > cmds.log
+   31  cd
+   32  git add cmds.log
+   33  git clone https://github.com/mgouyersjsu/cs131
+   34  git add cmds.log
+   35  directory
+   36  dir
+   37  cd/cs131
+   38  git init
+   39  pwd
+   40  git clone https://github.com/mgouyersjsu/cs131.git
+   41  pwd cs131
+   42  pwd
+   43  cd matthewsp24
+   44  cd cs131
+   45  git add cmds.log
+   46  pwd
+   47  history > cmds.log
+   48  wget www.github.com
+   49  history > cmds.log
+   50  pwd
+   51  directory
+   52  dir
+   53  git add cmds.log
+   54  dir
+   55  pwd
+   56  cd Worksheet1
+   57  cd /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131/Worksheet1
+   58  cd /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131
+   59  mkdir worksheet1
+   60  worksheet1/.gitkeep
+   61  touch worksheet1/.gitkeep
+   62  git add worksheet1/.gitkeep
+   63  git commit -m "Creating Worksheet 1 directory in UNIX"
+   64  git config --global matthewsjsu "Matthew Gouyer"
+   65  git config --global matthew.gouyer@sjsu.edu "matthew.gouyer@sjsu.edu"
+   66  git commit -m "Creating WS1 dir in unix"
+   67  git config --global matthew.gouyer@sjsu.edu "matthew.gouyer@sjsu.edu"
+   68  git config --global mgouyersjsu "Matthew Gouyer"
+   69  history > cmds.log
