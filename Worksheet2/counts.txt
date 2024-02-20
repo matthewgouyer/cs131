@@ -1,0 +1,6 @@
+The first number (238) is the line count of records in the "Music" category.
+The second number (830) is the word count of records in the "Music" category.
+
+
+238 Music_Category.txt
+830 Music_Category.txt
