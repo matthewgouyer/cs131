@@ -1,0 +1,66 @@
+login as: matthewsp24
+matthewsp24@172.20.25.9's password:
+
+// 1. Make directory Assignment 1 and make sure I am in it
+[matthewsp24@sjsu cs131]$ mkdir /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131/Assignment1
+[matthewsp24@sjsu cs131]$ cd Assignment1
+
+// 2. Echo shell and home to see bash. 
+[matthewsp24@sjsu Assignment1]$ echo $SHELL
+/bin/bash
+[matthewsp24@sjsu Assignment1]$ echo $HOME
+
+// 3. I used UID and I belong to S77
+[matthewsp24@sjsu Assignment1]$ id -u
+1164
+[matthewsp24@sjsu Assignment1]$ id -Gn
+matthewsp24 S77
+
+// 4. make directory and check it's creation within A1. Removed permission to write using chmod
+[matthewsp24@sjsu Assignment1]$ mkdir myDir
+[matthewsp24@sjsu Assignment1]$ ls
+myDir
+[matthewsp24@sjsu Assignment1]$ chmod -w myDir
+[matthewsp24@sjsu Assignment1]$ cd myDir
+// I cannot access it or write in it.
+[matthewsp24@sjsu myDir]$ ls -l
+total 0
+[matthewsp24@sjsu myDir]$ touch myFile.txt
+// 5. create dir2 and 3, create file myFile.txt and move it.
+[matthewsp24@sjsu Assignment1]$ mkdir myDir2
+[matthewsp24@sjsu Assignment1]$ mkdir myDir3
+[matthewsp24@sjsu Assignment1]$ cd myDir2
+[matthewsp24@sjsu myDir2]$ touch myFile.txt
+[matthewsp24@sjsu myDir2]$ mv myFile.txt myDir3
+
+// 6. Check ram # using free -m
+[matthewsp24@sjsu myDir3]$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          71367       31163       21632        3513       18571       35232
+Swap:          4119           0        4119
+
+// 7. Use cat to check os release, under os-release
+[matthewsp24@sjsu myDir3]$ cat /etc/os-release
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+
+
+[matthewsp24@sjsu myDir3]$ ls -l /etc/os-release
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+
+

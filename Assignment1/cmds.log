@@ -1,0 +1,34 @@
+// 1. Make directory Assignment 1 and make sure I am in it 
+  270  mkdir /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131/Assignment1
+  271  ls
+  272  cd Assignment1
+
+  // 2. Echo shell and home to see bash. 
+  275  echo $SHELL
+  276  echo $HOME
+  
+  // 3. I used UID and I belong to S77
+  277  id -u
+  278  id -Gn
+  // 4. make directory and check it's creation within A1. Removed permission to write using chmod
+  279  mkdir myDir
+  281  chmod -w myDir
+  282  cd myDir
+
+// 5. create dir2 and 3, create file myFile.txt and move it.
+  285  touch myFile.txt
+  297  mkdir myDir2
+  298  mkdir myDir3
+  301  touch myDir2/myFile.txt
+  302  vi myDir2/myFile.txt
+  303  touch myDir2/myFile.txt
+  306  mv myFile.txt myDir3
+
+// // 6. Check ram # using free -m
+  354  free -m
+  
+  // 7. Use cat to check os release, under os-release
+  355  cat /etc/os-release
+  356  ls -l /etc/os-release
+  357   history > cmds.log
+ 

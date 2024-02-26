@@ -1,0 +1,357 @@
+    1  passwd
+    2  wget www.github.com
+    3  open index.html
+    4  help
+    5  systemctl enable --now cockpit.socket
+    6  N
+    7  systemctl enable --now cockpick.socket
+    8  systemctl enable --now cockpit.socket
+    9  disconnect
+   10  echo $SHELL
+   11  echo "Hello"
+   12  mkdir files
+   13  pwd
+   14  pwd files
+   15  ls 
+   16  cd files
+   17  pwd
+   18  clean
+   19  clear
+   20  pwd
+   21  touch new.txt
+   22  ls
+   23  vi new.txt
+   24  ls
+   25  history
+   26  exit
+   27  pwd
+   28  pwd
+   29  wget www.github.com
+   30  history > cmds.log
+   31  cd
+   32  git add cmds.log
+   33  git clone https://github.com/mgouyersjsu/cs131
+   34  git add cmds.log
+   35  directory
+   36  dir
+   37  cd/cs131
+   38  git init
+   39  pwd
+   40  git clone https://github.com/mgouyersjsu/cs131.git
+   41  pwd cs131
+   42  pwd
+   43  cd matthewsp24
+   44  cd cs131
+   45  git add cmds.log
+   46  pwd
+   47  history > cmds.log
+   48  wget www.github.com
+   49  history > cmds.log
+   50  pwd
+   51  directory
+   52  dir
+   53  git add cmds.log
+   54  dir
+   55  pwd
+   56  cd Worksheet1
+   57  cd /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131/Worksheet1
+   58  cd /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131
+   59  mkdir worksheet1
+   60  worksheet1/.gitkeep
+   61  touch worksheet1/.gitkeep
+   62  git add worksheet1/.gitkeep
+   63  git commit -m "Creating Worksheet 1 directory in UNIX"
+   64  git config --global matthewsjsu "Matthew Gouyer"
+   65  git config --global matthew.gouyer@sjsu.edu "matthew.gouyer@sjsu.edu"
+   66  git commit -m "Creating WS1 dir in unix"
+   67  git config --global matthew.gouyer@sjsu.edu "matthew.gouyer@sjsu.edu"
+   68  git config --global mgouyersjsu "Matthew Gouyer"
+   69  history > cmds.log
+   70  touch worksheet1/cmds.log
+   71  git commit -m "Push history to worksheet1"
+   72  --global
+   73  git config --global matthew.gouyer@sjsu.edu "matthew.gouyer@sjsu.edu"
+   74  git commit -m "Push history to worksheet1"
+   75  pwd
+   76  git pwd
+   77  git rev -parse
+   78  git rev-parse
+   79  git status
+   80  git restore --staged worksheet/.gitkeep
+   81  git restore --staged worksheet1/.gitkeep
+   82  git restore --staged cmds.log
+   83  git add cmds.log
+   84  rmdir
+   85  git rmdir
+   86  dir
+   87  pwd
+   88  git init
+   89  git status
+   90  pwd
+   91  mkdir worksheet1
+   92  ws1
+   93  mkdir ws1
+   94  touch ws1/cmds.log
+   95  git commit -m "Add ws1 and push cmds.log"
+   96  pwd
+   97  cd /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131/ws1
+   98  dir
+   99  touch ws1/.gitkeep
+  100  touch ws1/cmds.log
+  101  git status
+  102  git restore --staged cmds.log
+  103  git add ws1/cmds.log
+  104  git push
+  105  wget www.github.com
+  106  git clone https://github.com/mgouyersjsu/cs131.git
+  107  cd cs131
+  108  mkdir Worksheet1
+  109  history > cmds.log
+  110  mv cmds.log Worksheet1/
+  111  mv cmds.log Worksheet1
+  112  git add Worksheet1/cmds.log
+  113  cd Worksheet1
+  114  history > cmds.log
+  115  mkdir Worksheet1
+  116  ls Worksheet1
+  117  cd Worksheet1
+  118  cd cs131/Worksheet1
+  119  rm -r Worksheet1
+  120  ls
+  121  rm -r worksheet1
+  122  rm -r ws1
+  123  ls
+  124  rm -r cmds.log
+  125  ls
+  126  rm -r cs131
+  127  pwd
+  128  mkdir Worksheet1
+  129  history > cmds.log
+  130  mv cmds.log Worksheet1/
+  131  git add WorkSheet1/cmds.log
+  132  git add WorkSheet1 cmds.log
+  133  cd WorkSheet1
+  134  cd Worksheet1
+  135  history > cmds.log
+  136  ls
+  137  git add Worksheet1/cmds.log
+  138  git add cmds.log
+  139  git commit -m "Worksheet 1 add command history"
+  140  git config --global matthew.gouyer@sjsu.edu "matthew.gouyer@sjsu.edu"
+  141  git config --global mgouyersjsu "mgouyersjsu"
+  142  git config --list
+  143  git config --global user.name "mgouyersjsu"
+  144  git config --global user.email "matthew.gouyer@sju.edu"
+  145  history > cmds.log
+  146  pws
+  147  pwd
+  148  ls
+  149  git add Worksheet1/cmds.log
+  150  cd cs131
+  151  git add cmds.log
+  152  git push origin master
+  153  ls
+  154  git add cmds.log
+  155  git commit -m "Push cmds.log to cs131/Worksheet1"
+  156  git push origin master
+  157  git branch
+  158  git add cmds.log
+  159  git commit -m "Push cmds.log to Worksheet 1 try2"
+  160  git push origin main
+  161  remote: Support for password authentication was removed on August 13, 2021.
+  162  remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+  163  fatal: Authentication failed for 'https://github.com/mgouyersjsu/cs131/'
+  164  [matthewsp24@sjsu Worksheet1]$
+  165  git add cmds.log
+  166  git commit -m "Adding cmds.log to Worksheet1"
+  167  git push origin main
+  168  git add cmds.log
+  169  git commit -m "Adding cmds.log to Worksheet1"
+  170  git push
+  171  git pull
+  172  To https://github.com/mgouyersjsu/cs131
+  173   ! [rejected]        main -> main (fetch first)
+  174  error: failed to push some refs to 'https://github.com/mgouyersjsu/cs131'
+  175  hint: Updates were rejected because the remote contains work that you do
+  176  hint: not have locally. This is usually caused by another repository pushing
+  177  hint: to the same ref. You may want to first integrate the remote changes
+  178  hint: (e.g., 'git pull ...') before pushing again.
+  179  hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+  180  git fetch origin
+  181  git merge origin/main
+  182  git status
+  183  git merge --abort
+  184  git status
+  185  git add ../index.html
+  186  git rm ../cmds.log
+  187  git commit -m "Worksheet 1 start hopefully"
+  188  git merge origin/main
+  189  rm .git/.MERGE_MSG.swp
+  190  git merge origin/main
+  191  rm .git/.MERGE_MSG.swp
+  192  git push origin main
+  193  exit
+  194  jobs
+  195  [matthewsp24@sjsu Worksheet1]$ jobs
+  196  [1]+  Stopped                 git pull
+  197  [matthewsp24@sjsu Worksheet1]$
+  198  exit
+  199  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  200  grep -i 'United States' Global\ YouTube\ Statistics.csv > US_YouTubers.txt
+  201  grep -i 'Music' Global\ YouTube\ Statistics.csv > Music_Category.txt
+  202  wc -l Music_Category.txt > counts.txt
+  203  wc -w Music_Category.txt >> counts.txt
+  204  nano counts.txt
+  205  history > cmds.log
+  206  mkdir Worksheet2
+  207  mv counts.txt cmds.log Worksheet2/
+  208  git add Worksheet2/
+  209  git commit -m "Add Worksheet2 Youtube Stats files and cmdhistory"
+  210  git push origin main
+  211  git commit -am "Save Worksheet 2 work"
+  212  git pull orogin main
+  213  git push origin main
+  214  cd WorkSheet2
+  215  ls
+  216  cd cs131/Worksheet2
+  217  cd cs131
+  218  mkdir Worksheet2
+  219  cd cs131/Worksheet2
+  220  rm -r WorkSheet2
+  221  cd 
+  222  rm -r Worksheet2
+  223  rm -r WorkSheet2
+  224  cd WorkSheet1
+  225  ls
+  226  cd 131
+  227  cd cs131
+  228  ls
+  229  cd cs131/Worksheet2
+  230  cd Worksheet2
+  231  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  232  grep -i 'United States' Global\ YouTube\ Statistics.csv > US_YouTubers.txt
+  233  grep -i 'Music' Global\ YouTube\ Statistics.csv > Music_Category.txt
+  234  wc -l Music_Category.txt > counts.txt
+  235  wc -w Music_Category.txt >> counts.txt
+  236  nano counts.txt
+  237  ls
+  238  history > cmds.log
+  239  git add Worksheet2/
+  240  git add 
+  241  cd cs131
+  242  cd
+  243  git add cs131/Worksheet2
+  244  git commit -m "Add YT stats for WK2"
+  245  git config --global matthew.gouyer@sjsu.edu "matthew.gouyer@sjsu.edu"
+  246  git config --global user.name "mgouyersjsu"
+  247  git config --global user.email "matthew.gouyer@sju.edu
+  248  git commit -m "Add Worksheet2 stuff"
+  249  git push origin main
+  250  ls
+  251  git add
+  252  cd cs131/Worksheet2
+  253  cd
+  254  cd cd131
+  255  cd cs131
+  256  git add Worksheet2/
+  257  git commit -m "Add Worksheet2 files"
+  258  git push origin main
+  259  git add Worksheet2/
+  260  git commit -m "Add WS2 YT stats files"
+  261  git push
+  262  exit
+  263  pwd
+  264  cd cs131
+  265  pwd
+  266  mkdir ~/Assignment1
+  267  pwd
+  268  ls
+  269  mkdir cs131/Assignment1
+  270  mkdir /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131/Assignment1
+  271  ls
+  272  cd Assignment1
+  273  ls
+  274  pwd
+  275  echo $SHELL
+  276  echo $HOME
+  277  id -u
+  278  id -Gn
+  279  mkdir myDir
+  280  ls
+  281  chmod -w myDir
+  282  cd myDir
+  283  ls
+  284  ls -l
+  285  touch myFile.txt
+  286  mkdir myDir2
+  287  cd Assignment1
+  288  cd cs131
+  289  cd
+  290  cd Assignment1
+  291  pwd
+  292  -r Assignment1
+  293  cd
+  294  cd cs131
+  295  cd Assignment1
+  296  pwd
+  297  mkdir myDir2
+  298  mkdir myDir3
+  299  cd myDir2
+  300  pwd
+  301  touch myDir2/myFile.txt
+  302  vi myDir2/myFile.txt
+  303  touch myDir2/myFile.txt
+  304  touch myFile.txt
+  305  mv myDir2/myFile.txt myDir3/
+  306  mv myFile.txt myDir3
+  307  cd cs131
+  308  cd
+  309  cd cs131
+  310  cd Assignment1
+  311  cd myDir3
+  312  pwd
+  313  ls
+  314  ls -l
+  315  cd
+  316  cd cs131
+  317  cd Assignment1
+  318  pwd
+  319  ls
+  320  cd myDir2
+  321  ls
+  322  touch myFile.txt
+  323  ls
+  324  mv myDir2/myFile.txt myDir3/
+  325  mv myFile.txt myDir3
+  326  ls myDir3
+  327  pwd
+  328  ls
+  329  ls myDir3
+  330  touch myFile.txt
+  331  ls
+  332  mv myFile.txt myDir3/
+  333  mv myFile.txt myDir3
+  334  ls
+  335  ls myDir3
+  336  cd myDir3
+  337  ls
+  338  touch myFile.txt
+  339  sudo mv myFile.txt myDir3
+  340  ls
+  341  mv myDir2/myFile.txt myDir3
+  342  pwd
+  343  mv /mnt/scratch/FA23_CS131_Ashish/matthewsp24/cs131/Assignment1/myDir2/myFile.txt myDir3
+  344  ls myDir3
+  345  cd 
+  346  cd Assignment1
+  347  cd myDir3 
+  348  cd
+  349  cd cs131
+  350  cd Assignment1
+  351  cd myDir3
+  352  touch myFile.txt
+  353  ls
+  354  free -m
+  355  cat /etc/os-release
+  356  ls -l /etc/os-release
+  357   history > cmds.log
