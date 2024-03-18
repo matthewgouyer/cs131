@@ -1,0 +1,40 @@
+  714  mkdir Assignment2
+  715  ls
+  716  clear history
+//1. This commando is search for all files in the /etc dir and one.txt is
+// redirecting the standard output to a txt file
+//2. and 2> two.txt is redirecting the standard error to a txt file
+  717  find /etc -type f > one.txt 2> two.txt
+//3. to view the contents of one.txt & two.txt we use cat. they show standard
+// output and error libraries 
+  732  cat one.txt
+  733  cat two.txt
+//4. we used this command to extract the dates from the dataset
+  734  cut -d ',' -f 20,21 Global\ YouTube\ Statistics.csv > dates.txt
+//5. then used sort to group the same dates together
+  741  sort dates.txt > sorted_dates.txt
+//6. then used unq with 0c to count the # of occurnces for each date
+  742  uniq -c sorted_dates.txt > date_counts.txt
+//7. then used sort again but with -n to sort the dates by the number of occurences and -r to try sorting in reverse order
+  743  sort -n -r date_counts.txt > sorted_date_counts.txt
+//8. then to get the top 3 most number of youtube channels created date
+// we use head -3 
+  744  head -3 sorted_date_counts.txt
+  745  ls
+  746  nano sorted_date_counts.txt
+//9. to find all processes owned by us we us this command to list
+// all those processes
+  747  ps -u $USER
+//10.  when we use a command like vi file.txt in one terminal and then check
+// the processes in another terminal, we should see the vi process listed.
+  748  vi file.txt
+//11. We can find the process id ofr the init process with this command
+  749  ps -p 1
+//12. we use this command to display info about all running processes.
+//The ‘a’ option tells ps to list the processes of all users on the system
+// rather than just those of the current user,
+// ‘u’ provides detailed information, and ‘x’ also
+// lists processes that do not have a controlling
+// terminal, such as daemons.
+  750  ps aux
+  751  touch Assignment2.txt
