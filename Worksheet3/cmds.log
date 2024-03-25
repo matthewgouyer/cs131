@@ -1,0 +1,21 @@
+//Task 1. 
+// First need to extract relevant columns from the csv file, cut -d used to specify delimiter and -f to specify columns to cut, in our case country and highest monthly earnings. 
+  909  cut -d ',' -f8,16 'Global YouTube Statistics.csv' > country_and_earnings.csv
+// Then we sort that data, -k to column to sort on, -n to make numerical and -r to reverse order from high to low.
+  910  sort -t ',' -k2 -nr country_and_earnings.csv > sorted_country_and_earnings.csv
+// Filter data between the 3 countries using grep
+  911  grep -e 'United States' -e 'United Kingdom' -e 'India' sorted_country_and_earnings.csv > filtered_sorted_country_and_earnings.csv
+  912  echo "Task 1:" > ws3.txt
+  913  cat filtered_sorted_country_and_earnings.csv >> ws3.txt
+
+// Task 2.
+// Same idea as above but need category and # of subscribers
+  916  cut -d ',' -f5,3 'Global YouTube Statistics.csv' > category_and_subscribers.csv
+  917  sort -t ',' -k2 -nr category_and_subscribers.csv > sorted_category_and_subscribers.csv
+  918  grep -e 'Sports' -e 'Education' -e 'Entertainment' sorted_category_and_subscribers.csv > filtered_sorted_category_and_subscribers.csv
+  919  echo "Task 2:" >> ws3.txt
+  920  cat filtered_sorted_category_and_subscribers.csv >> ws3.txt
+  921  ls
+  922  nano ws3.txt
+  923  history > cmds.log
+

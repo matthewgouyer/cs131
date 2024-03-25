@@ -1,0 +1,13 @@
+Task 1:
+Channel name, country, highest_monthly_earnings
+DaFug!?Boom!  United States,9200000
+T-Series  India,9000000
+Jelly United Kingdom,2000000
+
+
+Task 2:
+Channel name, # of Subscribers, category
+Vlad and Niki 98900000,Entertainment
+WWE 96000000,Sports
+Pinkfong Baby Shark - Kids' Songs & Stories 68200000,Education
+
