@@ -1,0 +1,44 @@
+Script started on 2024-04-09 13:40:29-04:00
+
+Task 1:
+vi ~/.bashrc
+
+// Here I wrote these into the script
+alias l='ls -ltr'
+alias w='ls -l | wc'
+bash-4.4$ source ~/.bashrc
+bash-4.4$ 
+
+// Testing aliases from script
+
+bash-4.4$ l
+total 200
+drwxrwxr-x 2 matthewsp24 matthewsp24   4096 Apr  8 23:24  Subscribers
+-rw-rw-r-- 1 matthewsp24 matthewsp24 200279 Apr  8 23:30 'Global YouTube Statistics.csv'
+-rw-rw-r-- 1 matthewsp24 matthewsp24      0 Apr  9 13:40  ws4.txt
+bash-4.4$ w
+      4      31     231
+
+bash-4.4$ awk -F',' '$3=="United States" {print $2}' 'Global YouTube Statistics.ccsv' > Worksheet4/Subscribers/United_States.txt
+bash: Worksheet4/Subscribers/United_States.txt: No such file or directory
+
+// Task 2:
+// Here i make the dir for Worksheet4/Subscribers
+bash-4.4$ cd Worksheet4
+bash-4.4$ mkdir -p Subscribers
+bash-4.4$ ls
+'Global YouTube Statistics.csv'   Subscribers   ws4.txt
+
+bash-4.4$ [Kbash-4.4$ [Kbash-4.4$ awk -F',' '$3=="United States" {print $2}' 'Global YouTube Statistics.csv' > Subscribbers/United_States.txt
+bash-4.4$ 
+bash-4.4$ awk -F',' '$3=="India" {print $2}' 'Global YouTube Statistics.csv' > Subscribers/Indiia.txt
+bash-4.4$ ls
+'Global YouTube Statistics.csv'   Subscribers   ws4.txt
+bash-4.4$ cd Subsri[K[Kci[Kribers
+bash-4.4$ ls
+India.txt  United_States.txt
+bash-4.4$ awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }' United_States.txt > ../ws44_means.txt
+bash-4.4$ awk '{ sum += $1; n++ } END { if (n > 0) print sum / n; }' India.txt >> ../ws4_means..txt
+bash-4.4$ exit
+
+Script done on 2024-04-09 13:54:01-04:00
