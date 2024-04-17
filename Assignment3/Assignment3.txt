@@ -1,0 +1,146 @@
+//Task 1:
+	a. The number of lines in last.fake before filtering.
+	b. The command you used to make the file such that only lines that have “sp24” are in the “lastsp24.fake” file.		
+	c. The number of lines in lastsp24.fake after you filtered everything that does not have “sp24”.
+
+[matthewsp24@sjsu Assignment3]$ wc -l last.fake
+507 last.sp24.fake
+[matthewsp24@sjsu Assignment3]$ wc -l lastsp24.fake
+478 lastsp24.fake
+
+//Task 2: The list of distinct usernames that logged in on a Sunday from the lastsp24.fake file.
+
+[matthewsp24@sjsu Assignment3]$ grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+
+//Task 3: The list of distinct usernames who logged in between 11PM - 4 AM from the lastsp24.fake file.Task 3:
+
+[matthewsp24@sjsu Assignment3]$ awk '$8 >= "23:00" || $8 <= "04:00" {print $1}' lastsp24.fake | sort | uniq
+aarushisp24
+aayushsp24
+acesp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+atishaysp24
+ayesp24
+benjaminsp24
+bennysp24
+billysp24
+brandonsp24
+breannasp24
+briansp24
+chih-kuosp24
+connersp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+edisonsp24
+ericsp24
+farihasp24
+fnusp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+hardiksp24
+jadonsp24
+jaydevsp24
+jessesp24
+jimmysp24
+jonathansp24
+justinsp24
+kevinsp24
+khushisp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+maysp24
+megansp24
+michellesp24
+nhatsp24
+nicholsonsp24
+nicolesp24
+piercesp24
+pratiksp24
+rickysp24
+robertosp24
+robertsp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+swansp24
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+
+//Task 4: The list of distinct usernames who logged in between 5AM to 9AM from the lastsp24.fake file.
+
+[matthewsp24@sjsu Assignment3]$ awk '$8 >= "05:00" && $8 <= "09:00" {print $1}' lastsp24.fake | sort | uniq
+ajaysp24
+ericsp24
+
+//Task 5: The list of distinct usernames that start with “t” from the lastsp24.fake file.
+
+[matthewsp24@sjsu Assignment3]$ awk '{print $1}' lastsp24.fake | grep '^t' | sort | uniq
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+
+//Task 6: The list of all users that have usernames starting with ‘a’ and have UID divisible by 2 from the passwd.fake file.
+
+[matthewsp24@sjsu Assignment3]$ awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake | sort | uniq
+aayushsp24
+acesp24
+ajay23fa
+ajaysp24
+akashsp24
+alan23fa
+alexsp24
+amansp24
+amreenf23
+angie23fa
+apple23fa
+areebah23fa
+ashish
+ayesp24
+
+//Task 7: The distinct lines left in passwd.fake after deleting all letters, digits, and spaces.
+
+[matthewsp24@sjsu Assignment3]$ sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
+

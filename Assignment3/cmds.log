@@ -1,0 +1,45 @@
+//Task 1:
+Give commands and Output of :
+1. The number of lines in last.fake before filtering
+2. The command you used to make the file such that only lines that have "sp24" are in the "lastsp24.fake" file. (Similar to how you extracted US data from YoutubeDataset)
+3. The number of lines in lastsp24.fake after you filtered everything that does not have "sp24"
+
+   12  grep 'sp24' last.fake > lastsp24.fake
+   14  wc -l last.fake
+   15  wc -l lastsp24.fake
+
+//Task 2:
+Find all the usernames that logged in on a Sunday from the lastsp24.fake file.
+Give only the distinct users.
+
+   16  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq
+
+//Task 3:
+Find all the night owls from the lastsp24.fake file.
+Use the apporpriate file to find the users who logged in between 11PM - 4 AM ( inclusing 11PM, use >= 11PM and <=4AM)
+Again, give a list of distinct users.
+
+   17  awk '$8 >= "23:00" || $8 <= "04:00" {print $1}' lastsp24.fake | sort | uniq
+
+//Task 4:
+Find all the Early Birds from the lastsp24.fake file.
+Use the appropriate file to find the users who logged in between 5AM to 9AM ( including 9AM, use >=5AM and <= 9AM)
+
+   18  awk '$8 >= "05:00" && $8 <= "09:00" {print $1}' lastsp24.fake | sort | uniq
+
+//Task 5:
+Display the users having a username that starts with "t"
+Directions : use awk and regex that we used in Class activity to find Tomatoes!
+
+   19  awk '{print $1}' lastsp24.fake | grep '^t' | sort | uniq
+
+//Task 6:
+Use awk on the passwd.fake file to find all users that have usernames starting with 'a' and have UID divisble by 2.
+(Notice that you have to use && as I only want the list of users who qualify both conditions)
+
+   20  awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake | sort | uniq
+
+//Task 7:
+Use sed on passwd.fake to Display all the distinct lines left in passwd.fake after deleting all letter and digits and spaces.
+
+   21  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
