@@ -1,6 +1,8 @@
 #!/bin/bash
 
-while IFS=, read -r rank youtuber subscribers video_views category rest; do
+IFS=,
+for line in $(cat YouTubers.csv); do
+    IFS=, read -r rank youtuber subscribers video_views category rest <<< "$line"
     if [[ "$category" == "Music" ]]; then
         echo "$youtuber" >> "UnitedStates/Music.txt"
     elif [[ "$category" == "Entertainment" ]]; then
