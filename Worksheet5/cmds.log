@@ -1,0 +1,27 @@
+ // Make directory for WS5
+ 1000  mkdir Worksheet5
+ 1002  cd Worksheet5
+ 
+ 1004  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Glo$
+ 
+ // Make US dir
+ 1006  mkdir UnitedStates
+ 
+ // Create and write script in nano for the bash shell
+ 1010  touch script.sh
+ 1049  nano script.sh
+
+// Make the script executable with chmod
+ 1051  chmod +x script.sh
+ 
+// Run the script
+ 1052  ./script.sh
+
+// Nanoing just to verify contents
+ 1054  nano ws5.txt
+ 1055  cd UnitedStates
+ 1056  ls
+ 1057  nano Comedy.txt
+ 1058  nano Entertainment.txt
+ 1059  nano Gaming.txt
+

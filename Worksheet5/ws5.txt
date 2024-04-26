@@ -1,0 +1,5 @@
+ 202 UnitedStates/Music.txt
+ 241 UnitedStates/Entertainment.txt
+  94 UnitedStates/Gaming.txt
+  69 UnitedStates/Comedy.txt
+ 606 total
